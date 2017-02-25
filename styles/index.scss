@@ -87,6 +87,20 @@ body {
   }
 }
 
+.copy {
+  overflow: visible;
+  position: relative;
+}
+
+.line {
+  background: $accent;
+  height: 8px;
+  left: -168px;
+  position: absolute;
+  top: 40px;
+  width: 130px;
+}
+
 .name {
   color: #4a4a4a;
   font-size: 36px;
