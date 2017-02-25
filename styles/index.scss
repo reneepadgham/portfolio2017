@@ -1,5 +1,42 @@
+$purple: #5438dc;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
+  font-family: sans-serif;
+  height: 100%;
   margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   padding: 0;
+  width: 100%;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.title {
+  color: $purple;
+}
+
+.bio {
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $purple;
+    text-decoration: none;
+  }
 }
