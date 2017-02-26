@@ -3,18 +3,6 @@
 $off-white: #f9f9f9;
 $accent: #5438dc;
 
-@mixin ipad() {
-  @media only screen and (max-width: 1020px) {
-    @content;
-  }
-}
-
-@mixin mobile() {
-  @media only screen and (max-width: 760px) {
-    @content;
-  }
-}
-
 html,
 body {
   background: $off-white;
