@@ -14,19 +14,34 @@ body {
   min-height: 100%;
   padding: 0;
   width: 100%;
+
+  @include ipad {
+    height: auto;
+  }
 }
 
 .wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
+
+  @include ipad {
+    display: block;
+    height: auto;
+  }
 }
 
 .card {
   height: 50%;
   position: relative;
   width: 50%;
+
+  @include ipad {
+    margin: 0 auto 100px;
+    width: 580px;
+  }
 }
 
 .name {
@@ -82,11 +97,20 @@ body {
 
   .description {
     margin: 0 3% 0 auto;
+
+    @include ipad {
+      margin: 0 3% 150px auto;
+    }
   }
 
   .triangle {
-    border-width: 35vh 0 0 35vw;
+    border-width: 43vh 0 0 46.25vw;
     left: 2.5%;
+
+    @include ipad {
+      border-width: 280px 0 0 580px;
+      left: 0;
+    }
   }
 }
 
@@ -101,16 +125,29 @@ body {
 
   .description {
     margin: 0 auto 0 3%;
+
+    @include ipad {
+      margin: 0 auto 150px 3%;
+    }
   }
 
   .triangle {
-    border-width: 0 0 35vh 35vw;
+    border-width: 0 0 43vh 46.25vw;
     right: 2.5%;
+
+    @include ipad {
+      border-width: 0 0 280px 580px;
+      right: 0;
+    }
   }
 }
 
 .card:nth-child(4n + 1) {
   padding: 2.5% 1.25% 1.25% 2.5%;
+
+  @include ipad {
+    padding: 0;
+  }
 
   .line {
     background: $diverse-ui;
@@ -119,11 +156,19 @@ body {
   .triangle {
     border-color: transparent transparent $diverse-ui;
     bottom: 4.5%;
+
+    @include ipad {
+      bottom: 0;
+    }
   }
 }
 
 .card:nth-child(4n + 2) {
   padding: 2.5% 2.5% 1.25% 1.25%;
+
+  @include ipad {
+    padding: 0;
+  }
 
   .line {
     background: $fidelity;
@@ -132,11 +177,19 @@ body {
   .triangle {
     border-color: transparent transparent transparent $fidelity;
     bottom: 4.5%;
+
+    @include ipad {
+      bottom: 0;
+    }
   }
 }
 
 .card:nth-child(4n + 3) {
   padding: 1.25% 1.25% 2.5% 2.5%;
+
+  @include ipad {
+    padding: 0;
+  }
 
   .line {
     background: $gigster;
@@ -145,11 +198,19 @@ body {
   .triangle {
     border-color: transparent transparent $gigster;
     bottom: 9%;
+
+    @include ipad {
+      bottom: 0;
+    }
   }
 }
 
 .card:nth-child(4n) {
   padding: 1.25% 2.5% 2.5% 1.25%;
+
+  @include ipad {
+    padding: 0;
+  }
 
   .line {
     background: $visuals;
@@ -158,5 +219,9 @@ body {
   .triangle {
     border-color: transparent transparent transparent $visuals;
     bottom: 9%;
+
+    @include ipad {
+      bottom: 0;
+    }
   }
 }

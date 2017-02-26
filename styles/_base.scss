@@ -1,6 +1,18 @@
 $white: #fff;
 $black: #000;
 
+@mixin ipad() {
+  @media only screen and (max-width: 1020px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media only screen and (max-width: 760px) {
+    @content;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
