@@ -6,12 +6,8 @@ $accent: #5438dc;
 html,
 body {
   background: $off-white;
-  font-family: "canada-type-gibson", "Helvetica", sans-serif;
   height: 100%;
-  margin: 0;
   min-height: 100%;
-  min-width: 100%;
-  padding: 0;
 
   @media screen and (min-width: 468px) {
     min-height: 790px;
