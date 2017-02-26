@@ -46,4 +46,9 @@ gulp.task('htmlmin', function() {
     .pipe(gulp.dest('./out'));
 });
 
-gulp.task('build', ['sassmin', 'htmlmin']);
+gulp.task('images', function() {
+  gulp.src('./images/*.png')
+    .pipe(gulp.dest('./out/images'));
+});
+
+gulp.task('build', ['sassmin', 'htmlmin', 'images']);
