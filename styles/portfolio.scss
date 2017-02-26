@@ -92,6 +92,15 @@ body {
   }
 }
 
+.image {
+  background-size: cover;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, .25);
+  height: 72%;
+  position: absolute;
+  width: 58%;
+  z-index: 1;
+}
+
 .card:nth-child(even) {
   .name {
     text-align: right;
@@ -124,6 +133,14 @@ body {
 
     @include mobile {
       border-width: 280px 0 0 335px;
+    }
+  }
+
+  .image {
+    left: 2.5%;
+
+    @include ipad {
+      left: 0;
     }
   }
 }
@@ -162,6 +179,14 @@ body {
       border-width: 0 0 280px 335px;
     }
   }
+
+  .image {
+    right: 2.5%;
+
+    @include ipad {
+      right: 0;
+    }
+  }
 }
 
 .card:nth-child(4n + 1) {
@@ -177,6 +202,14 @@ body {
 
   .triangle {
     border-color: transparent transparent $diverse-ui;
+    bottom: 4.5%;
+
+    @include ipad {
+      bottom: 0;
+    }
+  }
+
+  .image {
     bottom: 4.5%;
 
     @include ipad {
@@ -204,6 +237,14 @@ body {
       bottom: 0;
     }
   }
+
+  .image {
+    bottom: 4.5%;
+
+    @include ipad {
+      bottom: 0;
+    }
+  }
 }
 
 .card:nth-child(4n + 3) {
@@ -225,6 +266,14 @@ body {
       bottom: 0;
     }
   }
+
+  .image {
+    bottom: 9%;
+
+    @include ipad {
+      bottom: 0;
+    }
+  }
 }
 
 .card:nth-child(4n) {
@@ -240,6 +289,14 @@ body {
 
   .triangle {
     border-color: transparent transparent transparent $visuals;
+    bottom: 9%;
+
+    @include ipad {
+      bottom: 0;
+    }
+  }
+
+  .image {
     bottom: 9%;
 
     @include ipad {
