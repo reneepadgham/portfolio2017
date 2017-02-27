@@ -184,6 +184,7 @@ body {
   a:active,
   a:visited {
     color: $accent;
+    font-weight: 600;
     text-decoration: none;
   }
 }
