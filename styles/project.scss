@@ -49,6 +49,10 @@ p:last-child {
 
 section {
   padding: 100px 0;
+
+  &.compact {
+    padding: 50px 0;
+  }
 }
 
 .line {
@@ -132,4 +136,39 @@ section {
     color: #222427;
     font-weight: 600;
   }
+}
+
+.half {
+  border-right: 1px solid #ced3dc;
+  flex: 1;
+  padding: 0 80px 0 0;
+
+  @include ipad {
+    border-right: 0;
+    flex: auto;
+    margin: 0 0 36px;
+    padding: 0;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+  }
+}
+
+.half:last-child {
+  border-right: 0;
+  padding: 0 0 0 80px;
+
+  @include ipad {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.tweets {
+  width: 100%;
 }
