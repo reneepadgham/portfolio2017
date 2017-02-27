@@ -16,6 +16,10 @@ p:last-child {
   background: $gigster;
 }
 
+.fidelity-bg {
+  background: $fidelity;
+}
+
 .gray-bg {
   background: #f9fafa;
 }
@@ -62,13 +66,12 @@ section {
   border: 2px solid $white;
   border-radius: 3px;
   color: $white;
-  display: block;
+  display: inline-block;
   font-size: 24px;
   font-weight: 600;
-  padding: 19px 0;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
-  width: 270px;
 }
 
 .section-header {
