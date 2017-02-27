@@ -45,6 +45,11 @@ p:last-child {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 40px;
+
+  &.with-images {
+    align-items: center;
+    padding: 0 80px;
+  }
 }
 
 section {
@@ -56,7 +61,16 @@ section {
 }
 
 header {
+  align-items: flex-end;
+  display: flex;
   height: 531px;
+}
+
+.header-image {
+  background-size: cover;
+  height: 378px;
+  margin: 0 60px 0 0;
+  width: 680px;
 }
 
 .line {
@@ -175,4 +189,33 @@ header {
 
 .tweets {
   width: 100%;
+}
+
+.images {
+  height: 397px;
+  position: relative;
+  width: 600px;
+}
+
+.image {
+  background-size: cover;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, .25);
+  height: 335px;
+  width: 600px;
+}
+
+.gigster-health {
+  height: 326px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 558px;
+}
+
+.gigster-app {
+  bottom: 0;
+  height: 140px;
+  left: 0;
+  position: absolute;
+  width: 295px;
 }
