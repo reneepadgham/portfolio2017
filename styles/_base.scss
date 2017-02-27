@@ -1,5 +1,10 @@
 $white: #fff;
 $black: #000;
+$diverse-ui: #f02148;
+$fidelity: #222c3c;
+$gigster: #0e75db;
+$visuals: #00a1e0;
+
 
 @mixin ipad() {
   @media only screen and (max-width: 1020px) {

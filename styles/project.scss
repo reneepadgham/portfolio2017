@@ -1,1 +1,111 @@
 @import 'base';
+
+p {
+  color: #5b616a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 0 32px;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+.gigster-bg {
+  background: $gigster;
+}
+
+.gray-bg {
+  background: #f9fafa;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.line {
+  height: 8px;
+  margin: 0 0 0 60px;
+  width: 160px;
+}
+
+.title {
+  width: 460px;
+}
+
+.name {
+  color: $white;
+  font-size: 54px;
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+
+.description {
+  color: $white;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 48px;
+}
+
+.visit,
+.visit:hover,
+.visit:active,
+.visit:visited {
+  border: 2px solid $white;
+  border-radius: 3px;
+  color: $white;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 19px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 270px;
+}
+
+.section-header {
+  h2 {
+    color: #222427;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+}
+
+.section-description {
+  width: 890px;
+
+  strong {
+    color: #222427;
+    font-weight: 600;
+  }
+}
+
+.copy {
+  width: 400px;
+}
+
+.up-next,
+.up-next:hover,
+.up-next:active,
+.up-next:visited {
+  color: #5b616a;
+  font-size: 28px;
+  font-weight: 400;
+  display: block;
+  margin: 40px 0 40px auto;
+  text-decoration: none;
+
+  strong {
+    color: #222427;
+    font-weight: 600;
+  }
+}
