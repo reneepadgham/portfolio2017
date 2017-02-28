@@ -6,11 +6,37 @@
 
     <script src="https://use.typekit.net/lhq7khm.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.fontawesome.com/fb22341e1a.js"></script>
 
     <link href="vendor/aos.css" rel="stylesheet" />
     <link href="dist/project.css" rel="stylesheet" />
   </head>
   <body>
+    <button class="menu-button" id="menu" type="button"></button>
+    <div class="overlay">
+      <div class="row">
+        <div class="third">
+          <h2><a href="/">Home</a></h2>
+        </div>
+        <div class="third">
+          <h2><a href="portfolio.html">Work</a></h2>
+          <ul class="work">
+            <li><a class="active" href="diverse-ui.html">Diverse UI</a></li>
+            <li><a href="fidelity.html">Fidelity</a></li>
+            <li><a href="gigster.html">Gigster</a></li>
+            <li><a href="visuals.html">Visuals</a></li>
+          </ul>
+        </div>
+        <div class="third">
+          <h2><a href="about.html">About Me</a></h2>
+        </div>
+        <div class="whole">
+          <ul class="social-links">
+            <li><a href="https://medium.com/@reneepadgham"><i class="fa fa-medium" aria-hidden="true"></i></a></li><li><a href="https://www.instagram.com/reneepadgham/"><i class="fa fa-instagram" aria-hidden="true"></i><Paste></a></li><li><a href="https://twitter.com/reneepadgham"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><li><a href="https://dribbble.com/reneepadgham"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li><li><a href="mailto:renee@padgham.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header class="diverse-ui-bg">
         <div class="container">
@@ -96,6 +122,17 @@
         </div>
       </footer>
     </div>
+    <script>
+      var menu = document.getElementById('menu');
+
+      menu.addEventListener('click', function() {
+        if (document.body.className) {
+          document.body.className = '';
+        } else {
+          document.body.className = 'menu';
+        }
+      });
+    </script>
     <script src="vendor/aos.js"></script>
     <script>
       AOS.init({
