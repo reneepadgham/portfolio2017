@@ -1,11 +1,11 @@
 $white: #fff;
 $black: #222427;
-$dark-grey: #5B616A;
+$dark-grey: #5b616a;
 $diverse-ui: #f02148;
 $fidelity: #4a90e2;
 $gigster: #0e75db;
 $visuals: #60d394;
-$off-white: #F9FAFA;
+$off-white: #f9fafa;
 $accent: #ed254e;
 
 @mixin ipad() {
@@ -81,14 +81,78 @@ body {
 }
 
 .bar {
+  background: #222427;
+  border-radius: 3px;
   display: block;
   height: 3px;
-  width: 33px;
-  background: #222427;
   margin: 6px auto;
-  border-radius: 3px;
+  width: 33px;
 }
 
 .middle {
   margin: 0 auto;
+}
+
+.overlay {
+  background: $off-white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 0;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .work {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      font-size: 24px;
+      margin: 0 0 24px;
+    }
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  .third {
+    width: 33%;
+  }
+
+  .whole {
+    width: 100%;
+  }
+}
+
+.menu-button {
+  background-color: $black;
+  border: 0;
+  cursor: pointer;
+  height: 100px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  z-index: 4;
+}
+
+.menu {
+  overflow: hidden;
+
+  .overlay {
+    height: 100%;
+  }
 }
