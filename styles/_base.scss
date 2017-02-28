@@ -94,15 +94,27 @@ body {
 }
 
 .overlay {
-  background: $off-white;
+  background: rgba($off-white, .95);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   height: 0;
+  justify-content: center;
   overflow: auto;
   position: absolute;
   width: 100%;
   z-index: 3;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 180px 0 0;
+    max-width: 960px;
+
+    @include ipad {
+      margin: 67px 0 0;
+    }
+  }
 
   h2 {
     font-size: 36px;
@@ -127,12 +139,41 @@ body {
     text-decoration: none;
   }
 
+  .active {
+    color: $accent;
+  }
+
   .third {
-    width: 33%;
+    flex: 1;
+
+    @include ipad {
+      flex: auto;
+      width: 100%;
+    }
   }
 
   .whole {
+    text-align: center;
     width: 100%;
+  }
+
+  .social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+
+    li:last-child {
+      margin: 0;
+    }
+
+    a {
+      color: $accent;
+    }
   }
 }
 
