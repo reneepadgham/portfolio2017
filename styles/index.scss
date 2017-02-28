@@ -137,11 +137,11 @@ body {
 }
 
 .name {
-  color: #4a4a4a;
+  color: #222427;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 2px;
-  margin: 0 0 6px;
+  margin: 0;
   text-transform: uppercase;
 
   @include ipad {
@@ -154,7 +154,7 @@ body {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: .4px;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 
   @include ipad {
     font-size: 22px;
@@ -162,8 +162,8 @@ body {
 }
 
 .location {
-  color: $black;
-  font-size: 18px;
+  color: #222427;
+  font-size: 20px;
   font-weight: 400;
   margin: 0 0 24px;
 
@@ -173,7 +173,7 @@ body {
 }
 
 .bio {
-  color: #4a4a4a;
+  color: #5B616A;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.33;
