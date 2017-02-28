@@ -1,0 +1,48 @@
+@import 'base';
+
+section {
+  padding: 100px 0;
+}
+
+.visuals-bg {
+  background: $visuals;
+}
+
+.title {
+  width: 460px;
+}
+
+.name {
+  color: $white;
+  font-size: 54px;
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+
+.description {
+  color: $white;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.details {
+  h2 {
+    color: #222427;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+
+  p {
+    color: #5b616a;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
