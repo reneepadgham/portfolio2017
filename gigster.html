@@ -7,6 +7,7 @@
     <script src="https://use.typekit.net/lhq7khm.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <link href="vendor/aos.css" rel="stylesheet" />
     <link href="dist/project.css" rel="stylesheet" />
   </head>
   <body>
@@ -51,7 +52,7 @@
           <div class="copy">
             <p>I worked with the CTO to discover the biggest pain points and what the product needed to be able to do going forward. I was also able to collect information from project managers and developers on the platform. For the dashboard, our key findings were that users needed to instantly be aware of project state (timeliness) and customer satisfaction.</p>
           </div>
-          <div class="images">
+          <div data-aos="fade-left" class="images">
             <img class="image gigster-health" alt="Screenshot of gigster.com" src="images/gigster-health.png" />
             <img class="image gigster-app" alt="Screenshot of gigster.com" src="images/gigster-app.png" />
           </div>
@@ -59,7 +60,7 @@
       </section>
       <section class="gray-bg">
         <div class="container with-images">
-          <img class="image" alt="Screenshot of gigster.com" src="images/gigster-dashboard.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of gigster.com" src="images/gigster-dashboard.png" />
           <div class="copy">
             <p>After testing a few potential layouts - I created a visual interface using a progress bar for timeliness and an emoticon face for customer satisfaction. They have potential states of good (green), be careful (orange), and this is going south quickly (red) to notify users when action is necessary.</p>
           </div>
@@ -71,7 +72,7 @@
             <p>I modularized the description page, locking key info to the top for easy access.</p>
             <p>This layout was intentionally kept simple. The company was evolving rapidly and we wanted to be able to effortless change the contents of this page.</p>
           </div>
-          <img class="image" alt="Screenshot of the Gigster description page" src="images/gigster-project.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of the Gigster description page" src="images/gigster-project.png" />
         </div>
       </section>
       <section class="gray-bg">
@@ -92,5 +93,11 @@
         </div>
       </footer>
     </div>
+    <script src="vendor/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150
+      });
+    </script>
   </body>
 </html>
