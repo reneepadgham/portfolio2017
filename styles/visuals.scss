@@ -27,11 +27,19 @@ section {
 }
 
 .details {
+  width: 400px;
+
   h2 {
     color: #222427;
     font-size: 48px;
     font-weight: 600;
     margin: 0 0 10px;
+  }
+
+  .line {
+    height: 8px;
+    margin: 0 0 40px 60px;
+    width: 240px;
   }
 
   p {
@@ -45,4 +53,74 @@ section {
     font-weight: 600;
     text-decoration: none;
   }
+}
+
+.handymapp {
+  .line {
+    background: #243780;
+  }
+}
+
+.digit {
+  .line {
+    background: #5bc2f7;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #5bc2f7;
+  }
+}
+
+.due {
+  .line {
+    background: #02cca3;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #02cca3;
+  }
+}
+
+.auction {
+  .line {
+    background: #60d394;
+  }
+}
+
+.oauth {
+  .line {
+    background: #5e74a3;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #5e74a3;
+  }
+}
+
+.gamesmith {
+  .line {
+    background: #57cec4;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #57cec4;
+  }
+}
+
+.image {
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, .25);
+  display: block;
+  width: 600px;
 }
