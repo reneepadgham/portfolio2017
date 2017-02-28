@@ -7,6 +7,7 @@
     <script src="https://use.typekit.net/lhq7khm.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <link href="vendor/aos.css" rel="stylesheet" />
     <link href="dist/visuals.css" rel="stylesheet" />
   </head>
   <body>
@@ -21,7 +22,7 @@
       </header>
       <section>
         <div class="container with-images">
-          <img class="image" alt="Screenshot of Handymapp" src="images/handymapp.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of Handymapp" src="images/handymapp.png" />
           <div class="handymapp details">
             <h2>Handymapp</h2>
             <div class="line"></div>
@@ -36,12 +37,12 @@
             <div class="line"></div>
             <p>I worked with <a href="https://digit.co/">Digit</a> to design the Android version of their application.</p>
           </div>
-          <img class="image" alt="Screen of Digit" src="images/digit.png" />
+          <img data-aos="fade-left" class="image" alt="Screen of Digit" src="images/digit.png" />
         </div>
       </section>
       <section>
         <div class="container with-images">
-          <img class="image" alt="Screenshot of due.com" src="images/due.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of due.com" src="images/due.png" />
           <div class="due details">
             <h2>Due</h2>
             <div class="line"></div>
@@ -56,12 +57,12 @@
             <div class="line"></div>
             <p>I was in charge of UX &amp; UI on an Android application used for bidding on items at an auction.</p>
           </div>
-          <img class="image" alt="Screenshot of Auction" src="images/auction.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of Auction" src="images/auction.png" />
         </div>
       </section>
       <section>
         <div class="container with-images">
-          <img class="image" alt="Screenshot of OAuth dialogs" src="images/oauth.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of OAuth dialogs" src="images/oauth.png" />
           <div class="oauth details">
             <h2>OAuth Dialogs</h2>
             <div class="line"></div>
@@ -76,7 +77,7 @@
             <div class="line"></div>
             <p>I re-designed the UI of <a href="http://gamesmith.com/">Gamesmith</a>, the authoritative who's who of video game professionals.</p>
           </div>
-          <img class="image" alt="Screenshot of Gamesmith" src="images/gamesmith.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of Gamesmith" src="images/gamesmith.png" />
         </div>
       </section>
       <footer>
@@ -85,6 +86,12 @@
         </div>
       </footer>
     </div>
+    <script src="vendor/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150
+      });
+    </script>
   </body>
 </html>
 

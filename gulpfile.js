@@ -51,4 +51,9 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./out/images'));
 });
 
-gulp.task('build', ['sassmin', 'htmlmin', 'images']);
+gulp.task('vendor', function() {
+  gulp.src('./vendor/*')
+    .pipe(gulp.dest('./out/vendor'));
+});
+
+gulp.task('build', ['sassmin', 'htmlmin', 'images', 'vendor']);
