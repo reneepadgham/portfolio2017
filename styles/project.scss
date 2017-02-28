@@ -228,14 +228,12 @@ header {
 }
 
 .image {
-  background-size: cover;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, .25);
-  height: 335px;
+  display: block;
   width: 600px;
 }
 
 .gigster-health {
-  height: 326px;
   position: absolute;
   right: 0;
   top: 0;
@@ -244,7 +242,6 @@ header {
 
 .gigster-app {
   bottom: 0;
-  height: 140px;
   left: 0;
   position: absolute;
   width: 295px;
