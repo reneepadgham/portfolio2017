@@ -1,7 +1,5 @@
 @import 'base';
 
-$off-white: #f9f9f9;
-$accent: #ed254e;
 
 html,
 body {
@@ -226,23 +224,4 @@ body {
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 	}
-}
-
-.menu-wrap {
-  position: absolute;
-  right: 50px;
-  top: 40px;
-}
-
-.bar {
-  display: block;
-  height: 3px;
-  width: 33px;
-  background: #222427;
-  margin: 6px auto;
-  border-radius: 3px;
-}
-
-.middle {
-  margin: 0 auto;
 }
