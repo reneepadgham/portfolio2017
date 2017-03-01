@@ -64,7 +64,7 @@ section {
 header {
   align-items: flex-end;
   display: flex;
-  height: 531px;
+  height: 500px;
 }
 
 .header-image {
@@ -86,14 +86,15 @@ header {
 
 .name {
   color: $white;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 600;
   margin: 0 0 3px;
+  letter-spacing: 1px;
 }
 
 .description {
   color: $white;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   margin: 0 0 48px;
 }
@@ -112,6 +113,7 @@ header {
   padding: 20px;
   text-align: center;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .gigster-inverted:hover,

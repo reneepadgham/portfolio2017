@@ -16,12 +16,42 @@ section {
 
 .visuals-bg {
   background: $visuals;
+
+  .container {
+    @include ipad {
+      padding: 0;
+      justify-content: center;
+    }
+  }
 }
 
 header {
   align-items: flex-end;
   display: flex;
-  height: 531px;
+  height: 500px;
+
+  @include ipad {}
+
+  @include mobile {
+    height: 430px;
+  }
+}
+
+.container.with-images {
+  @include ipad {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+
+    .details {
+      order: -1;
+      margin-bottom: 60px;
+    }
+
+    .image {
+      width: 100%;
+    }
+  }
 }
 
 .header-image {
@@ -29,22 +59,73 @@ header {
   height: 378px;
   margin: 0 60px 0 0;
   width: 680px;
+
+  @media only screen and (max-width: 1200px) {
+    width: 50vw;
+    height: 38vh;
+  }
+
+  @include ipad {
+    width: 90vw;
+    height: 38vh;
+    margin: 0;
+  }
+
+  @include mobile {
+    height: 25vh;
+  }
 }
 
 .title {
-  width: 460px;
+  width: 30vw;
+  margin-top: 18px;
+
+  @media only screen and (max-width: 1200px) {
+    width: 30vw;
+  }
+
+  @include ipad {
+    padding: 0 20px 40px 20px;
+    width: 90vw;
+    order: -1;
+    text-align: center;
+
+    .name {
+      color: $white;
+      font-weight: 600;
+      margin: 0 0 3px;
+      letter-spacing: .5px;
+    }
+
+    .description {
+      color: $white;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  @include mobile {
+    text-align: left;
+
+    .name {
+      font-size: 32px;
+    }
+  }
 }
 
 .name {
   color: $white;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 600;
   margin: 0 0 3px;
+  letter-spacing: 1px;
 }
 
 .description {
   color: $white;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   margin: 0;
 }
