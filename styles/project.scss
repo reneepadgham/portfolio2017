@@ -21,6 +21,10 @@ p {
     padding: 0 40px;
     text-align: center;
     width: 100%;
+
+    @include mobile {
+      padding: 0;
+    }
   }
 
   a {
@@ -56,6 +60,10 @@ p:last-child {
 section {
   padding: 100px 0;
 
+  @include mobile {
+    padding: 50px 0;
+  }
+
   &.compact {
     padding: 50px 0;
   }
@@ -64,6 +72,14 @@ section {
 .container {
   align-items: flex-start;
   flex-grow: 1;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+
+  &.with-images {
+    padding: 0 20px;
+  }
 }
 
 header {
@@ -205,6 +221,11 @@ header {
 
 .copy {
   width: 400px;
+
+  @include mobile {
+    order: 2;
+    width: 100%;
+  }
 }
 
 .half {
@@ -253,6 +274,11 @@ header {
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, .25);
   display: block;
   width: 600px;
+
+  @include mobile {
+    margin: 0 auto 32px auto;
+    width: 335px;
+  }
 }
 
 .gigster-health {
