@@ -114,6 +114,15 @@ header {
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
+    .fa {
+      margin-left: 8px;
+    }
+}
+
+.visit:hover {
+  .fa {
+      animation: bounceLeft 2s infinite;
+  }
 }
 
 .gigster-inverted:hover,
@@ -221,4 +230,10 @@ header {
   left: 0;
   position: absolute;
   width: 295px;
+}
+
+.up-next {
+  .fa {
+    margin-left: 8px;
+  }
 }
