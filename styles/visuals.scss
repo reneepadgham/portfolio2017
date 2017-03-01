@@ -1,5 +1,15 @@
 @import 'base';
 
+.is-active {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $black;
+  }
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #fff;
+}
+
 section {
   padding: 100px 0;
 }

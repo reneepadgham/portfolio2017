@@ -11,7 +11,11 @@
     <link href="dist/portfolio.css" rel="stylesheet" />
   </head>
   <body>
-    <button class="menu-button" id="menu" type="button"></button>
+    <button class="hamburger hamburger--collapse" id="menu" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <div class="overlay">
       <div class="row">
         <div class="third">
@@ -42,7 +46,7 @@
         <div class="line"></div>
         <div class="description">
           <p>Diverse user images for user interface design.</p>
-          <a href="diverse-ui.html">Case Study &#8594;</a>
+          <a href="diverse-ui.html">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="triangle"></div>
         <div class="image" style="background-image: url('images/diverse-ui.png');"></div>
@@ -52,7 +56,7 @@
         <div class="line"></div>
         <div class="description">
           <p>Workflow automation and document management.</p>
-          <a href="fidelity.html">Case Study &#8594;</a>
+          <a href="fidelity.html">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="triangle"></div>
         <div class="image" style="background-image: url('images/fidelity.png');"></div>
@@ -62,7 +66,7 @@
         <div class="line"></div>
         <div class="description">
           <p>On demand software development.</p>
-          <a href="gigster.html">Case Study &#8594;</a>
+          <a href="gigster.html">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="triangle"></div>
         <div class="image" style="background-image: url('images/gigster.png');"></div>
@@ -72,7 +76,7 @@
         <div class="line"></div>
         <div class="description">
           <p>A collection of interfaces from various products I've created.</p>
-          <a href="visuals.html">View &#8594;</a>
+          <a href="visuals.html">View <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="triangle"></div>
         <div class="image" style="background-image: url('images/visuals.png');"></div>
@@ -87,6 +91,11 @@
         } else {
           document.body.className = 'menu';
         }
+      });
+
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
       });
     </script>
   </body>

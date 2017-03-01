@@ -12,7 +12,11 @@
     <link href="dist/project.css" rel="stylesheet" />
   </head>
   <body>
-    <button class="menu-button" id="menu" type="button"></button>
+    <button class="hamburger hamburger--collapse" id="menu" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <div class="overlay">
       <div class="row">
         <div class="third">
@@ -153,6 +157,11 @@
         } else {
           document.body.className = 'menu';
         }
+      });
+
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
       });
     </script>
     <script src="vendor/aos.js"></script>
