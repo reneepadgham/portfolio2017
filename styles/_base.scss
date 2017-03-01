@@ -154,9 +154,9 @@ body {
   }
 
   .whole {
+    margin-top: 160px;
     text-align: center;
     width: 100%;
-    margin-top: 160px;
 
     @include ipad {
       margin-top: 40px;
@@ -168,9 +168,13 @@ body {
     margin: 0;
     padding: 0;
 
+    @include ipad {
+      margin: 0 0 40px;
+    }
+
     li {
-      font-size: 20px;
       display: inline-block;
+      font-size: 20px;
       margin: 0 32px 0 0;
     }
 
