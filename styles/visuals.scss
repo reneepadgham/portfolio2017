@@ -16,12 +16,12 @@ section {
 
 .visuals-bg {
   background: $visuals;
+}
 
-  .container {
-    @include ipad {
-      padding: 0;
-      justify-content: center;
-    }
+.container {
+  @include ipad {
+    padding: 0;
+    justify-content: center;
   }
 }
 
@@ -29,8 +29,6 @@ header {
   align-items: flex-end;
   display: flex;
   height: 500px;
-
-  @include ipad {}
 
   @include mobile {
     height: 430px;
@@ -226,10 +224,4 @@ header {
 .image {
   display: block;
   width: 600px;
-}
-
-.up-next {
-  .fa {
-    margin-left: 8px;
-  }
 }

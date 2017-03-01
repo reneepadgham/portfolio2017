@@ -1,4 +1,4 @@
-@import "vendor/hamburgers/hamburgers";
+@import 'vendor/hamburgers/hamburgers';
 
 $white: #fff;
 $black: #222427;
@@ -26,12 +26,15 @@ $accent: #ed254e;
   0%, 20%, 50%, 100% {
     transform: translateX(0);
   }
+
   40% {
     transform: translateX(12px);
   }
+
   60% {
     transform: translateX(8px);
   }
+
   80% {
     transform: translateX(4px);
   }
@@ -79,7 +82,7 @@ body {
 .up-next:hover,
 .up-next:active,
 .up-next:visited {
-  color: #5b616a;
+  color: $dark-grey;
   display: block;
   font-size: 24px;
   font-weight: 400;
@@ -87,8 +90,12 @@ body {
   text-decoration: none;
 
   strong {
-    color: #222427;
+    color: $black;
     font-weight: 600;
+  }
+
+  .fa {
+    margin-left: 8px;
   }
 }
 
@@ -99,9 +106,9 @@ body {
   justify-content: center;
   overflow: auto;
   position: absolute;
+  transition: all .4s cubic-bezier(.165, .63, .14, .82);
   width: 100%;
   z-index: 4;
-  transition: all .4s cubic-bezier(0.165, 0.63, 0.14, 0.82);
 
   .row {
     display: flex;
