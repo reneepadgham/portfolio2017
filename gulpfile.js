@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-htmlmin');
 
@@ -37,7 +36,6 @@ gulp.task('default', ['serve', 'sass', 'html', 'watch']);
 gulp.task('sassmin', function() {
   gulp.src('./styles/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(gulp.dest('./out/dist'));
 });

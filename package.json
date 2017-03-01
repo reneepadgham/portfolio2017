@@ -4,7 +4,6 @@
   "description": "Portfolio 2017",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
     "gulp-cli": "^1.2.2",
     "gulp-connect": "^5.0.0",
     "gulp-cssmin": "^0.1.7",
