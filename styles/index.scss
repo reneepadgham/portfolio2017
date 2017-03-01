@@ -118,6 +118,7 @@ body {
 
   @include mobile {
     max-width: calc(100% - 80px);
+    padding-top: 80px;
   }
 }
 
