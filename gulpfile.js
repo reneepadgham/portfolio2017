@@ -58,4 +58,9 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./out/vendor'));
 });
 
-gulp.task('build', ['sassmin', 'htmlmin', 'images', 'vendor']);
+gulp.task('favicons', function() {
+  gulp.src('./favicons/*')
+    .pipe(gulp.dest('./out'));
+});
+
+gulp.task('build', ['sassmin', 'htmlmin', 'images', 'vendor', 'favicons']);
