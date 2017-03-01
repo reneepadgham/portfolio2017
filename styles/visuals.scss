@@ -18,6 +18,19 @@ section {
   background: $visuals;
 }
 
+header {
+  align-items: flex-end;
+  display: flex;
+  height: 531px;
+}
+
+.header-image {
+  background-size: cover;
+  height: 378px;
+  margin: 0 60px 0 0;
+  width: 680px;
+}
+
 .title {
   width: 460px;
 }
