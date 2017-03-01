@@ -208,9 +208,7 @@ body {
 .portfolio:visited {
   background: $accent;
   border-radius: 6px;
-  box-shadow: 0 0 6px 0 rgba(348, 84, 93, .5);
   color: $white;
-  display: block;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -219,10 +217,36 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 200px;
+  display: inline-block;
+  border: 2px solid $accent;
   &:hover {
 		animation-name: pulse;
 		animation-duration: 1.5s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+    box-shadow: 0 0 6px 0 rgba(348, 84, 93, .5);
 	}
+}
+
+.resume,
+.resume:hover,
+.resume:active,
+.resume:visited {
+  background: transparent;
+  box-shadow: none;
+  border: 2px solid $dark-grey;
+  color: $dark-grey;
+  margin-left: 20px;
+  width: 180px;
+  &:hover {
+    background: $dark-grey;
+    box-shadow: 0 0 6px 0 rgba(91, 97, 106, 0.25);
+    color: $white;
+  }
+
+  @include ipad {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 200px;
+  }
 }
