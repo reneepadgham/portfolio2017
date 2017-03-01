@@ -268,6 +268,12 @@ header {
   height: 397px;
   position: relative;
   width: 600px;
+
+  @include mobile {
+    height: 222px;
+    margin: 0 auto;
+    width: 335px;
+  }
 }
 
 .image {
@@ -286,6 +292,10 @@ header {
   right: 0;
   top: 0;
   width: 558px;
+
+  @include mobile {
+    width: 311px;
+  }
 }
 
 .gigster-app {
@@ -293,4 +303,8 @@ header {
   left: 0;
   position: absolute;
   width: 295px;
+
+  @include mobile {
+    width: 165px;
+  }
 }
