@@ -61,10 +61,18 @@ section {
   }
 }
 
+.container {
+  flex-grow: 1;
+}
+
 header {
   align-items: flex-end;
   display: flex;
   height: 500px;
+
+  @media only screen and (max-width: 1179px) {
+    height: 700px;
+  }
 }
 
 .header-image {
@@ -72,6 +80,19 @@ header {
   height: 378px;
   margin: 0 60px 0 0;
   width: 680px;
+
+  @media only screen and (max-width: 1279px) {
+    width: 50vw;
+    height: 38vh;
+  }
+
+  @media only screen and (max-width: 1179px) {
+    width: 100%;
+  }
+
+  @include mobile {
+    height: 27vh;
+  }
 }
 
 .line {
@@ -82,6 +103,24 @@ header {
 
 .title {
   width: 460px;
+
+  @media only screen and (max-width: 1279px) {
+    width: 30vw;
+  }
+
+  @media only screen and (max-width: 1179px) {
+    margin: 0 auto 36px auto;
+    max-width: 100%;
+    order: -1;
+    text-align: center;
+    width: auto;
+  }
+
+  @include mobile {
+    text-align: left;
+    margin: 0 0 36px;
+    max-width: 460px;
+  }
 }
 
 .name {
