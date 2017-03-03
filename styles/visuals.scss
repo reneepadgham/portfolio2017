@@ -76,6 +76,7 @@ header {
 
 .title {
   margin-top: 18px;
+  max-width: 430px;
   width: 30vw;
 
   @include ipad {
