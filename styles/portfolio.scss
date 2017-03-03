@@ -21,6 +21,8 @@ body {
   flex-wrap: wrap;
   height: calc(100vh - 50px);
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
