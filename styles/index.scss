@@ -139,9 +139,7 @@ body {
   color: #222427;
   font-size: 36px;
   font-weight: 600;
-  letter-spacing: 2px;
   margin: 0;
-  text-transform: uppercase;
 
   @include ipad {
     font-size: 32px;
@@ -150,33 +148,24 @@ body {
 
 .title {
   color: $accent;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
+  line-height: 40px;
   letter-spacing: .4px;
-  margin: 0 0 8px;
+  margin: 0;
 
   @include ipad {
     font-size: 22px;
   }
 }
 
-.location {
-  color: #222427;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0 0 24px;
-
-  @include ipad {
-    font-size: 16px;
-  }
-}
 
 .bio {
   color: #5B616A;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.33;
-  margin: 0 0 24px;
+  line-height: 24px;
+  margin: 24px 0 32px;
 
   @include ipad {
     font-size: 16px;
@@ -189,6 +178,7 @@ body {
     color: $accent;
     font-weight: 600;
     text-decoration: none;
+    letter-spacing: .5px;
   }
 }
 
