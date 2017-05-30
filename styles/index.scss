@@ -3,46 +3,27 @@
 
 html,
 body {
-  background: $off-white;
+  background: #f9fafa;
+  background-image: url(../images/menewbg.png);
   height: 100%;
   min-height: 100%;
-
-  @media screen and (min-width: 468px) {
-    min-height: 790px;
-  }
-}
-
-.wrapper {
-  height: 100%;
-  overflow: auto;
-  position: relative;
-}
-
-.accent-bar {
-  position: fixed;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100vh 0 0 66vw;
-  border-color: transparent transparent transparent $accent;
+  width: 100%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include mobile {
-    display: none;
+    background-image: none;
   }
 }
 
 .links {
-  bottom: 45px;
   color: $accent;
-  right: 50px;
-  position: absolute;
-  z-index: 3;
-
-  @include mobile {
-    bottom: 30px;
-    left: 40px;
-  }
+  margin-top: 64px;
 
   ul {
     list-style: none;
@@ -66,7 +47,7 @@ body {
   a {
     color: inherit;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @include mobile {
@@ -76,69 +57,16 @@ body {
 
 .content {
   align-items: center;
-  display: flex;
-  height: 100%;
   justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-
-.photo {
-  margin: 0 125px 0 0;
-
-  @include mobile {
-    margin: 0;
-  }
-
-  img {
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
-    height: 600px;
-    width: 400px;
-
-    @include ipad {
-      height: 460px;
-      width: 300px;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-}
-
-.copy {
-  max-width: 460px;
-  overflow: visible;
-  position: relative;
-  margin-top: -120px;
-
-  @include ipad {
-    max-width: 300px;
-  }
-
-  @include mobile {
-    max-width: calc(100% - 80px);
-    padding-top: 80px;
-  }
-}
-
-.line {
-  background: $accent;
-  height: 8px;
-  left: -168px;
-  position: absolute;
-  top: 40px;
-  width: 130px;
-
-  @include mobile {
-    display: none;
-  }
+  flex-direction: column;
+  max-width: 340px;
 }
 
 .name {
   color: #222427;
   font-size: 36px;
   font-weight: 600;
+  line-height: 56px;
   margin: 0;
 
   @include ipad {
@@ -146,26 +74,12 @@ body {
   }
 }
 
-.title {
-  color: $accent;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: .4px;
-  margin: 0;
-
-  @include ipad {
-    font-size: 22px;
-  }
-}
-
-
 .bio {
   color: #5B616A;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  margin: 24px 0 32px;
+  line-height: 27.71px;
+  margin: 0;
 
   @include ipad {
     font-size: 16px;
@@ -176,67 +90,6 @@ body {
   a:active,
   a:visited {
     color: $accent;
-    font-weight: 600;
     text-decoration: none;
-    letter-spacing: .5px;
-  }
-}
-
-@keyframes pulse {
-	25% {
-		transform: scale(1.05);
-	}
-
-	75% {
-		transform: scale(.95);
-	}
-}
-
-.portfolio,
-.portfolio:hover,
-.portfolio:active,
-.portfolio:visited {
-  background: $accent;
-  border-radius: 6px;
-  color: $white;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding: 20px 0;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  display: inline-block;
-  border: 2px solid $accent;
-  &:hover {
-		animation-name: pulse;
-		animation-duration: 1.5s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-    box-shadow: 0 0 6px 0 rgba(348, 84, 93, .5);
-	}
-}
-
-.resume,
-.resume:hover,
-.resume:active,
-.resume:visited {
-  background: transparent;
-  box-shadow: none;
-  border: 2px solid $dark-grey;
-  color: $dark-grey;
-  margin-left: 20px;
-  width: 180px;
-  &:hover {
-    background: $dark-grey;
-    box-shadow: 0 0 6px 0 rgba(91, 97, 106, 0.25);
-    color: $white;
-  }
-
-  @include ipad {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 200px;
   }
 }
