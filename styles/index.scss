@@ -3,41 +3,28 @@
 
 html,
 body {
-  background: $off-white;
+  background: #f9fafa;
+  background-image: url(../images/menewbg.png);
   height: 100%;
   min-height: 100%;
-
-  @media screen and (min-width: 468px) {
-    min-height: 790px;
-  }
-}
-
-.wrapper {
-  height: 100%;
-  overflow: auto;
-  position: relative;
-}
-
-.accent-bar {
-  position: fixed;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100vh 0 0 66vw;
-  border-color: transparent transparent transparent $accent;
+  width: 100%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include mobile {
     display: none;
+    background-image: none;
   }
 }
 
 .links {
-  bottom: 45px;
   color: $accent;
-  right: 50px;
-  position: absolute;
-  z-index: 3;
+  margin-top: 64px;
 
   @include mobile {
     bottom: 30px;
@@ -48,6 +35,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 16px;
   }
 
   li {
@@ -75,71 +63,22 @@ body {
 }
 
 .content {
-  align-items: center;
   display: flex;
   height: 100%;
   justify-content: center;
   position: relative;
   z-index: 2;
+  flex-direction: column;
+  max-width: 340px;
 }
 
-.photo {
-  margin: 0 125px 0 0;
-
-  @include mobile {
-    margin: 0;
-  }
-
-  img {
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
-    height: 600px;
-    width: 400px;
-
-    @include ipad {
-      height: 460px;
-      width: 300px;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-}
-
-.copy {
-  max-width: 460px;
-  overflow: visible;
-  position: relative;
-  margin-top: -120px;
-
-  @include ipad {
-    max-width: 300px;
-  }
-
-  @include mobile {
-    max-width: calc(100% - 80px);
-    padding-top: 80px;
-  }
-}
-
-.line {
-  background: $accent;
-  height: 8px;
-  left: -168px;
-  position: absolute;
-  top: 40px;
-  width: 130px;
-
-  @include mobile {
-    display: none;
-  }
-}
 
 .name {
   color: #222427;
   font-size: 36px;
   font-weight: 600;
   margin: 0;
+  line-height: 56px;
 
   @include ipad {
     font-size: 32px;
@@ -162,10 +101,10 @@ body {
 
 .bio {
   color: #5B616A;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  margin: 24px 0 32px;
+  line-height: 27.71px;
+  margin: 0;
 
   @include ipad {
     font-size: 16px;
