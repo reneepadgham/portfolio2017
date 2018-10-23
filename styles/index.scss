@@ -17,7 +17,6 @@ body {
   justify-content: center;
 
   @include mobile {
-    display: none;
     background-image: none;
   }
 }
