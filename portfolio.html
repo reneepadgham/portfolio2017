@@ -31,6 +31,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://use.fontawesome.com/fb22341e1a.js"></script>
 
+    <link href="dist/project.css" rel="stylesheet" />
     <link href="dist/portfolio.css" rel="stylesheet" />
   </head>
   <body>
@@ -46,12 +47,6 @@
         </div>
         <div class="third">
           <h2><a class="active" href="portfolio">Work</a></h2>
-          <ul class="work">
-            <li><a href="diverse-ui">Diverse UI</a></li>
-            <li><a href="fidelity">Fidelity</a></li>
-            <li><a href="gigster">Gigster</a></li>
-            <li><a href="visuals">Visuals</a></li>
-          </ul>
         </div>
         <div class="third">
           <h2><a href="about">About Me</a></h2>
@@ -64,46 +59,35 @@
       </div>
     </div>
     <div class="wrapper">
-      <div class="card">
-        <h1 class="name">Diverse UI</h1>
-        <div class="line"></div>
-        <div class="description">
-          <p>Diverse user images for user interface design.</p>
-          <a href="diverse-ui">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <h2>Work</h2>
+            <div class="accent-bg line"></div>
+          </div>
+          <div class="section-description">
+            <div>
+              <h1>Eventbrite</h1>
+              <p><a href="dashboard">Event Dashboard <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+              <p class="subtext">The central hub for Event Organizer's to view analytics and information.</p>
+              <p><a href="design-system">Design Sytem <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+              <p class="subtext">Scaling a design system through an acquisition and re-brand.</p>
+            </div>
+            <div>
+              <h1>Side Projects</h1>
+              <p><a href="diverse-ui">Diverse UI <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+              <p class="subtext">Diverse user images for user interface design.</p>
+            </div>
+            <div>
+              <h1>Older Work</h1>
+              <p><a href="dashboard">Fidelity <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+              <p class="subtext">Workflow automation and document management.</p>
+              <p><a href="visuals">Visuals <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+              <p class="subtext">A collection of interfaces from various products I've created.</p>
+            </div>
+          </div>
         </div>
-        <div class="triangle"></div>
-        <div class="image" style="background-image: url('images/diverse-ui.png');"></div>
-      </div>
-      <div class="card">
-        <h1 class="name">Fidelity</h1>
-        <div class="line"></div>
-        <div class="description">
-          <p>Workflow automation and document management.</p>
-          <a href="fidelity">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-        </div>
-        <div class="triangle"></div>
-        <div class="image" style="background-image: url('images/fidelity.png');"></div>
-      </div>
-      <div class="card">
-        <h1 class="name">Gigster</h1>
-        <div class="line"></div>
-        <div class="description">
-          <p>On demand software development.</p>
-          <a href="gigster">Case Study <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-        </div>
-        <div class="triangle"></div>
-        <div class="image" style="background-image: url('images/gigster.png');"></div>
-      </div>
-      <div class="card">
-        <h1 class="name">Visuals</h1>
-        <div class="line"></div>
-        <div class="description">
-          <p>A collection of interfaces from various products I've created.</p>
-          <a href="visuals">View <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-        </div>
-        <div class="triangle"></div>
-        <div class="image" style="background-image: url('images/visuals.png');"></div>
-      </div>
+      </section>
     </div>
     <script>
       var menu = document.getElementById('menu');

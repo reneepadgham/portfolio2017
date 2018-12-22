@@ -59,13 +59,12 @@
       </div>
     </div>
     <div class="wrapper">
-      <header class="fidelity-bg">
+      <header class="eds-bg">
         <div class="container">
-          <img class="header-image" alt="Screenshot of Fidelity" src="images/fidelity-header.png" />
+          <img class="header-image" alt="Screenshot of Eventbrite Design System" src="images/eds-header.png" />
           <div class="title">
-            <h1 class="name">Fidelity - Xtrac</h1>
-            <h2 class="description">Workflow automation and document management.</h2>
-            <a class="visit fidelity-inverted" href="https://www.xtracsolutions.com/">Visit xtracsolutions.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <h1 class="name">Eventbrite Design System</h1>
+            <h2 class="description">Scaling a design system through an acquisition.</h2>
           </div>
         </div>
       </header>
@@ -73,12 +72,11 @@
         <div class="container">
           <div class="section-header">
             <h2>Problem</h2>
-            <div class="fidelity-bg line"></div>
+            <div class="eds-bg line"></div>
           </div>
           <div class="section-description">
-            <p>Xtrac is used within Fidelity to track Work Items (WI) – which are things like new account openings, account maintenance (check reorder), and account servicing (address change) related to the various financial services Fidelity offers.</p>
-            <p>The existing interface made it difficult to understand what the latest news was on Work Items, and in turn, what a user should be doing in response. It was essentially a table view of actions that had occurred alongside a timestamp and brief description of what happened.</p>
-            <p>I was tasked with creating a page where users can see what's happening with a work item as well as what's been happening with all the work in their queue.</p>
+            <p>The Evenbrite Design System had been bootstrapped by a small team, but as we acquired several large companies it became apparent that it needed work to scale.</p>
+            <p>Information was scattered between the website, Sketch, Invision, and Slack. Designers couldn't find the information they needed. There was also no set process for interacting with the newly formed design system team.</p>
           </div>
         </div>
       </section>
@@ -86,82 +84,78 @@
         <div class="container">
           <div class="half">
             <h3>Team</h3>
-            <p>This was a five person team, including myself, a PM, and a software engineer along with an internal manager and UX consultant.</p>
+            <p>I worked together with a PM, an engineering manager, and several engineers.</p>
           </div>
           <div class="half">
             <h3>My Role</h3>
-            <p>I led ideation, low-fidelity and high-fidelity design, and clickable prototyping.</p>
+            <p>I was in charge of user research, user experience and interface design, and process creation.</p>
           </div>
         </div>
       </section>
       <section>
         <div class="container with-images">
           <div class="copy">
-            <p>The client was remote, and due to corporate privacy policies, screen sharing wasn't allowed - so I worked with an internal PM and UX team to understand current use patterns and problems. In the initial ideation phase, I worked to synthesize their data and insights into actionable product features.</p>
-            <p>There were many technical restraints in working with a legacy system, particularly in what interactions could and could not happen.</p>
+            <p>The original team was bootstrapped and didn't develop a process for naming components. Because of this, some of our naming didn't align with industry standards and designers were having trouble finding components.</p>
+            <p>To solve this - we did an industry analysis of other systems, standard naming, and held conversations with the design team. This led to a new information architecture for our component and pattern libraries.</p>
           </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of low-fidelity design" src="images/fidelity-bw.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of old dashboard" src="images/component-audit.png" />
         </div>
       </section>
       <section class="gray-bg">
         <div class="container">
-          <p class="centered">In the initial low fidelity version, I kept a lefthand menu to match style patterns in other aspects of the product and included the ability to view activity for a specific list or queue, the ability to sort activity by most recent or by work item, and the ability to sort by activity type. I placed visual emphasis on the action taken and the work item it was taken upon, and I added in a quick reply button to enable users to quickly take an action in response.</p>
-          <p class="centered"><strong>We turned this into a clickable prototype and sent it out to users to get feedback.</strong></p>
+          <p class="centered">I knew we needed to consolidate information to one place, but I wasn't sure where or what information to provide. So, I sent out an internal survey, had 1:1 interviews with designers, engineers, and product managers, and researched other design systems.</p>
         </div>
       </section>
       <section>
         <div class="container with-images">
-          <img data-aos="fade-right" class="image" alt="Screenshot of prototype" src="images/fidelity-color.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of prototype" src="images/component-overview.png" />
           <div class="copy">
-            <p>I then implemented that feedback as I moved towards a more high fidelity design. Some users were confused by the positioning of the filter options, so I created a different visual hierarchy to try to provide greater separation between items that dictated what the list was and the list itself. I also learned that being able to hide certain fields could greatly improve efficiency of some users, so I included a settings option. I then sent this new prototype out into the world.</p>
+            <p>Based on the results of that research, it became clear that the source of truth should be the web portal.</p>
+            <p>Historically, the web portal for the design system contained primarily developer documentation. It didn't give designers any guidance around how and when to use the component, which was showing up as a big problem. It also wasn't helpful for designers and developers trying to understand the ways our components could flex and be configured.</p>
+            <p>I designed an updated version that allowed us to provide more information to our users without the crowding that our previous pages had suffered from.</p>
+            <p>The key features improvements were adding in usage guidelines, explained below, and a configurable table for our components. Using this, users could create all possible configurations of the component and the code would update for developers to use in implementation.</p>
           </div>
         </div>
       </section>
       <section class="gray-bg">
+        <div class="container with-images">
+          <div class="copy">
+            <p>Many problems with the system stemmed from our lack of documentation around when and how to use component and any specifics of acceptable use. This was causing a lot of small usage inconsistencies across our product and frustrating designers. It was also an issue when developers would build small features without design assistance.</p>
+            <p>To solve this, our team went in and wrote best practices for all our components along with visual dos and donts.</p>
+          </div>
+          <img data-aos="fade-left" class="image" alt="Screenshot of new inline response form" src="images/usage-guidelines.png" />
+        </div>
+      </section>
+      <section>
         <div class="container">
-          <p class="centered">With this feedback and some newfound technical freedoms, I evolved the design to its final form. The ability to search and find a specific item from the feed had been unfeasible in the beginning but was now possible. Since our user interviews had indicated that it would provide high value, I included it in this version.</p>
-        </div>
-      </section>
-      <section>
-        <div class="container with-images">
-          <div class="copy">
-            <p>There was an obvious need for more robust filter/search options, so I redesigned the lefthand panel.</p>
-            <p>I discovered the type of action taken was most indicative of whether or not a user needed to respond, so I increased the visual prominence of the action icon. I also discovered that having the response action near the action would speed up the user’s flow.</p>
-          </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of filter/search options" src="images/fidelity-filter.png" />
-        </div>
-      </section>
-      <section class="gray-bg">
-        <div class="container with-images">
-          <img data-aos="fade-right" class="image" alt="Screenshot of new inline response form" src="images/fidelity-respond.png" />
-          <div class="copy">
-            <p>A key piece of this redesign was the ability to quickly respond - this was done with a form that appears inline with the prior action.</p>
-            <p>This had previously been done on a separate page (so the flow was table - item - item history - new action) which caused a lot of friction for users and lowered productivity.</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container with-images">
-          <div class="copy">
-            <p>We also needed to include a revised version of the table view to match the new flow and styling. This view allows users to do more robust queries and bulk actions.</p>
-          </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of new table design" src="images/fidelity-table.png" />
+            <p class="centered">Along with the web portal overhaul - I identified many key processes that needed to be updated. This resulted in new Slack workflows for communicating with the design team, the creation of open office hours, and switching from stickersheets of components to a robust Sketch library using symbols.</p>
         </div>
       </section>
       <section class="gray-bg">
         <div class="container">
           <div class="section-header">
             <h2>Results</h2>
-            <div class="fidelity-bg line"></div>
+            <div class="eds-bg line"></div>
           </div>
           <div class="section-description">
-            <p>The product is currently being beta tested with a group of internal users. From there, the task of widespread technical change and implementation can begin. So far - users have had an easy time acclimating to the new interface.</p>
+            <p>This work was fundamental to many large company projects done on almost impossible timelines after, including our future rebrand. We also gained greater adoption of the design system and improved our users understanding of the system, how to use it, and where to find information (as captured via survey).</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <h2>Other</h2>
+            <div class="eds-bg line"></div>
+          </div>
+          <div class="section-description">
+            <p>I led the creation of a native design system to align our mobile products to web and the overhaul of our design system to reflect our new brand pre-IPO - case studies coming soon.</p>
           </div>
         </div>
       </section>
       <footer>
         <div class="container">
-          <a class="up-next" href="visuals"><strong>Up next:</strong> Visuals <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          <a class="up-next" href="diverse-ui"><strong>Up next:</strong> Diverse-UI <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
       </footer>
     </div>

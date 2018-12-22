@@ -1,361 +1,44 @@
 @import 'base';
 
-html,
-body {
-  background: transparent;
-  height: 100%;
-  min-height: 100%;
-
-  @media screen and (min-width: 468px) {
-    min-height: 790px;
-  }
-
-  @include ipad {
-    height: auto;
+.is-active {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $black;
   }
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: calc(100vh - 50px);
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: $black;
+}
 
-  @include ipad {
-    display: block;
-    height: auto;
+.subtext {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 0 0 0 16px;
+}
+
+p:last-child {
+  margin: 0 0 0 16px;
+}
+
+a {
+  color: $accent;
+}
+
+.section-description {
+  flex-basis: 400px;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 400px;
+  div {
+    margin-bottom: 56px;
   }
 }
 
-.card {
-  height: 290px;
-  position: relative;
-  width: 525px;
-
-  @include ipad {
-    margin: 100px auto;
-    width: 525px;
-  }
-
-  @include mobile {
-    width: 335px;
-    height: 468px;
-    margin-bottom: 200px;
-  }
-}
-
-.name {
-  color: $black;
-  font-size: 36px;
-  font-weight: 600;
-  margin: 0 0 10px;
-}
-
-.line {
-  height: 4px;
-  margin: 0 0 24px;
-  width: 135px;
-}
-
-.description {
-  max-width: 160px;
-  position: relative;
-  z-index: 2;
-
-  p {
-    color: #5B616A;
-    font-size: 16px;
-    margin: 0 0 20px;
-  }
-
-  a,
-  a:hover,
-  a:active,
-  a:visited {
-    color: #878C92;
-    display: block;
-    font-size: 16px;
-    text-decoration: none;
-
-    .fa {
-      margin-left: 8px;
-    }
-  }
-
-  a:hover {
-    .fa {
-        animation: bounceLeft 2s infinite;
-    }
-  }
-}
-
-.triangle {
-  border-style: solid;
-  height: 0;
-  position: absolute;
-  width: 0;
-  z-index: -1;
-
-  @include mobile {
-    position: absolute;
-    z-index: 1;
-  }
-}
-
-.image {
-  background-size: cover;
-  height: 235px;
-  position: absolute;
-  width: 310px;
-  z-index: 1;
-
-  @include mobile {
-    height: 268px;
-    width: 335px;
-  }
-}
-
-.card:nth-child(even) {
-  .name {
-    text-align: right;
-  }
-
-  .line {
-    margin: 0 9% 24px auto;
-  }
-
-  .description {
-    margin: 0 20px 0 auto;
-
-    @media only screen and (max-width: 1200px) {
-      margin: 0 0 0 auto;
-    }
-
-    @include ipad {
-      margin: 0 20px 0 auto;
-    }
-
-    @include mobile {
-      margin: 0 auto 0 20px;
-      max-width: 280px;
-    }
-  }
-
-  .triangle {
-    border-width: 255px 0 0 525px;
-    left: 5%;
-
-    @include ipad {
-      border-width: 255px 0 0 525px;
-      left: 0;
-    }
-
-    @include mobile {
-      border-width: 280px 0 0 335px;
-    }
-  }
-
-  .image {
-    left: 5%;
-    background-position: right;
-
-    @include ipad {
-      left: 0;
-    }
-  }
-}
-
-.card:nth-child(odd) {
-  margin-right: 40px;
-
-  @media only screen and (max-width: 1200px) {
-    margin-right: 0;
-  }
-
-  @include ipad {
-    margin: 100px auto;
-  }
-
-  .name {
-    text-align: left;
-  }
-
-  .line {
-    margin: 0 auto 24px 9%;
-  }
-
-  .description {
-    margin: 0 auto 0 3%;
-
-    @media only screen and (max-width: 1200px) {
-      margin: 0 auto 0 0;
-    }
-
-    @include ipad {
-      margin: 0 auto 150px 3%;
-    }
-
-    @include mobile {
-      margin: 0 auto 0 20px;
-      max-width: 280px;
-    }
-  }
-
-  .triangle {
-    border-width: 0 0 255px 525px;
-    right: 5%;
-
-    @include ipad {
-      border-width: 0 0 255px 525px;
-      right: 0;
-    }
-
-    @include mobile {
-      border-width: 0 0 280px 335px;
-    }
-  }
-
-  .image {
-    right: 5%;
-    background-position: left;
-
-    @include ipad {
-      right: 0;
-    }
-  }
-}
-
-.card:nth-child(4n + 1) {
-
-
-  @include ipad {
-    padding: 0;
-  }
-
-  .line {
-    background: $diverse-ui;
-  }
-
-  a:hover {
-    color: $diverse-ui;
-  }
-
-  .triangle {
-    border-color: transparent transparent $diverse-ui;
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-
-  .image {
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-}
-
-.card:nth-child(4n + 2) {
-
-  @include ipad {
-    padding: 0;
-  }
-
-  .line {
-    background: $fidelity;
-  }
-
-  .triangle {
-    border-color: transparent transparent transparent $fidelity;
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-
-  a:hover {
-    color: $fidelity;
-  }
-
-  .image {
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-}
-
-.card:nth-child(4n + 3) {
-
-  @include ipad {
-    padding: 0;
-  }
-
-  .line {
-    background: $gigster;
-  }
-
-  a:hover {
-    color: $gigster;
-  }
-
-  .triangle {
-    border-color: transparent transparent $gigster;
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-
-  .image {
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-}
-
-.card:nth-child(4n) {
-
-  @include ipad {
-    padding: 0;
-  }
-
-  .line {
-    background: $visuals;
-  }
-
-  a:hover {
-    color: $visuals;
-  }
-
-  .triangle {
-    border-color: transparent transparent transparent $visuals;
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
-
-  .image {
-    bottom: 0;
-
-    @include ipad {
-      bottom: 0;
-    }
-  }
+section {
+  width: 60%;
+  margin: auto;
 }

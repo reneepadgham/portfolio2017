@@ -6,9 +6,15 @@ $dark-grey: #5b616a;
 $diverse-ui: #f02148;
 $fidelity: #4a90e2;
 $gigster: #0e75db;
+$dashboard: #39C2C9;
+$design-system: #007F8C;
 $visuals: #60d394;
 $off-white: #F9FAFC;
 $accent: #284ECC;
+
+h1 {
+  font-weight: 600;
+}
 
 @mixin ipad() {
   @media only screen and (max-width: 1020px) {
@@ -143,7 +149,7 @@ body {
   }
 
   a {
-    color: $black;
+    color: $accent;
     text-decoration: none;
   }
 

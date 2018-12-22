@@ -11,7 +11,7 @@
 }
 
 p {
-  color: #5b616a;
+  color: $dark-grey;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -55,6 +55,18 @@ p:last-child {
 
 .diverse-ui-color {
   color: $diverse-ui;
+}
+
+.dashboard-bg {
+  background: $dashboard;
+}
+
+.accent-bg {
+  background: $accent;
+}
+
+.eds-bg {
+  background: $design-system;
 }
 
 section {
@@ -114,7 +126,7 @@ header {
 
 .title {
   width: 460px;
-  margin-top: 18px;
+  margin-top: 40px;
 
   @media only screen and (max-width: 1279px) {
     width: 40%;

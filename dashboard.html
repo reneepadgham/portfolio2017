@@ -59,13 +59,12 @@
       </div>
     </div>
     <div class="wrapper">
-      <header class="fidelity-bg">
+      <header class="dashboard-bg">
         <div class="container">
-          <img class="header-image" alt="Screenshot of Fidelity" src="images/fidelity-header.png" />
+          <img class="header-image" alt="Screenshot of Event Dashboard" src="images/dashboard-header.png" />
           <div class="title">
-            <h1 class="name">Fidelity - Xtrac</h1>
-            <h2 class="description">Workflow automation and document management.</h2>
-            <a class="visit fidelity-inverted" href="https://www.xtracsolutions.com/">Visit xtracsolutions.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <h1 class="name">Event Dashboard</h1>
+            <h2 class="description">Event management and analytics for Eventbrite creators.</h2>
           </div>
         </div>
       </header>
@@ -73,12 +72,12 @@
         <div class="container">
           <div class="section-header">
             <h2>Problem</h2>
-            <div class="fidelity-bg line"></div>
+            <div class="dashboard-bg line"></div>
           </div>
           <div class="section-description">
-            <p>Xtrac is used within Fidelity to track Work Items (WI) – which are things like new account openings, account maintenance (check reorder), and account servicing (address change) related to the various financial services Fidelity offers.</p>
-            <p>The existing interface made it difficult to understand what the latest news was on Work Items, and in turn, what a user should be doing in response. It was essentially a table view of actions that had occurred alongside a timestamp and brief description of what happened.</p>
-            <p>I was tasked with creating a page where users can see what's happening with a work item as well as what's been happening with all the work in their queue.</p>
+            <p>The Event Dashboard is the most trafficked organizer facing page in the website. Because of this - over the years, many teams had put information they wanted to get in front of Organizers on the page. This had been done without evaluating user needs, and it resulted in a long, cluttered, difficult to use experience. </p>
+            <p>Through research, I also discovered that many organizers were struggling to understand the tools we had available to them. We were overloading our Organizers with information, but we weren’t providing the value that they needed.</p>
+            <p>We also needed to align this page to our new design system.</p>
           </div>
         </div>
       </section>
@@ -86,82 +85,65 @@
         <div class="container">
           <div class="half">
             <h3>Team</h3>
-            <p>This was a five person team, including myself, a PM, and a software engineer along with an internal manager and UX consultant.</p>
+            <p>I worked together with one other designer, a PM, an engineering manager, and several engineers.</p>
           </div>
           <div class="half">
             <h3>My Role</h3>
-            <p>I led ideation, low-fidelity and high-fidelity design, and clickable prototyping.</p>
+            <p>I was in charge of preliminary user research, user testing, user experience design, and interaction pattern creation.</p>
           </div>
         </div>
       </section>
       <section>
         <div class="container with-images">
           <div class="copy">
-            <p>The client was remote, and due to corporate privacy policies, screen sharing wasn't allowed - so I worked with an internal PM and UX team to understand current use patterns and problems. In the initial ideation phase, I worked to synthesize their data and insights into actionable product features.</p>
-            <p>There were many technical restraints in working with a legacy system, particularly in what interactions could and could not happen.</p>
+            <p>The previous event dashboard was overloaded with information (for context, this screenshot is cropped halfway through 😉) and didn't have clear hierarchy. It was also using our old visual system.</p>
+            <p>Since the content had been added by many teams over the years - nobody was sure what information was there for user needs vs. business wants. Because of this, there were also many individuals in the company that had stake in the product and were hesitant to make any major changes.</p>
           </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of low-fidelity design" src="images/fidelity-bw.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of old dashboard" src="images/old-dashboard.png" />
         </div>
       </section>
       <section class="gray-bg">
         <div class="container">
-          <p class="centered">In the initial low fidelity version, I kept a lefthand menu to match style patterns in other aspects of the product and included the ability to view activity for a specific list or queue, the ability to sort activity by most recent or by work item, and the ability to sort by activity type. I placed visual emphasis on the action taken and the work item it was taken upon, and I added in a quick reply button to enable users to quickly take an action in response.</p>
-          <p class="centered"><strong>We turned this into a clickable prototype and sent it out to users to get feedback.</strong></p>
+          <p class="centered">To alleviate those concerns, I kicked off the project by surveying 1,022 Event Organizers via an Ethnio pop-up on the existing dashboard to better understand user needs. I also did a product walk through with our customer success team to understand the areas they were receiving the most calls about.</p>
         </div>
       </section>
       <section>
         <div class="container with-images">
-          <img data-aos="fade-right" class="image" alt="Screenshot of prototype" src="images/fidelity-color.png" />
+          <img data-aos="fade-right" class="image" alt="Screenshot of prototype" src="images/dashboard-overview.png" />
           <div class="copy">
-            <p>I then implemented that feedback as I moved towards a more high fidelity design. Some users were confused by the positioning of the filter options, so I created a different visual hierarchy to try to provide greater separation between items that dictated what the list was and the list itself. I also learned that being able to hide certain fields could greatly improve efficiency of some users, so I included a settings option. I then sent this new prototype out into the world.</p>
+            <p>Based on my research, I changed the hierarchy of the page and removed information that wasn’t adding value. I learned that tickets sold, page views, and email invite conversions were the most important so I made them easily accessible at the top of the page.</p>
+            <p>I also worked with another designer to align the page content to our design system language and create new patterns for the system where necessary.</p>
           </div>
         </div>
       </section>
       <section class="gray-bg">
         <div class="container">
-          <p class="centered">With this feedback and some newfound technical freedoms, I evolved the design to its final form. The ability to search and find a specific item from the feed had been unfeasible in the beginning but was now possible. Since our user interviews had indicated that it would provide high value, I included it in this version.</p>
+            <p class="centered">The page layouts were then tested by users, shown to customer success, and run by major stakeholders. I was also able to test new design component interactions quickly using User Testing to make sure they were intuitive.</p>
         </div>
       </section>
       <section>
         <div class="container with-images">
           <div class="copy">
-            <p>There was an obvious need for more robust filter/search options, so I redesigned the lefthand panel.</p>
-            <p>I discovered the type of action taken was most indicative of whether or not a user needed to respond, so I increased the visual prominence of the action icon. I also discovered that having the response action near the action would speed up the user’s flow.</p>
+            <p>I was able to combine a user need with a business need by creating a “resources” section. This allowed users to easily find our tools that would add the most value to their event, and it gave the business an opportunity to highlight new tools and features as they were launched.</p>
+            <p>Ideally, long term, this list will be determined algorithmically based on what we know about the user.</p>
           </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of filter/search options" src="images/fidelity-filter.png" />
-        </div>
-      </section>
-      <section class="gray-bg">
-        <div class="container with-images">
-          <img data-aos="fade-right" class="image" alt="Screenshot of new inline response form" src="images/fidelity-respond.png" />
-          <div class="copy">
-            <p>A key piece of this redesign was the ability to quickly respond - this was done with a form that appears inline with the prior action.</p>
-            <p>This had previously been done on a separate page (so the flow was table - item - item history - new action) which caused a lot of friction for users and lowered productivity.</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container with-images">
-          <div class="copy">
-            <p>We also needed to include a revised version of the table view to match the new flow and styling. This view allows users to do more robust queries and bulk actions.</p>
-          </div>
-          <img data-aos="fade-left" class="image" alt="Screenshot of new table design" src="images/fidelity-table.png" />
+          <img data-aos="fade-left" class="image" alt="Screenshot of new inline response form" src="images/dashboard-resources-highlight.png" />
         </div>
       </section>
       <section class="gray-bg">
         <div class="container">
           <div class="section-header">
             <h2>Results</h2>
-            <div class="fidelity-bg line"></div>
+            <div class="dashboard-bg line"></div>
           </div>
           <div class="section-description">
-            <p>The product is currently being beta tested with a group of internal users. From there, the task of widespread technical change and implementation can begin. So far - users have had an easy time acclimating to the new interface.</p>
+            <p>The product was launched in a beta as part of a larger overhaul of the Organizer experience. Traffic to featured tools was up and we received positive feedback from beta users. It will be rolled out to all users as part of a larger new experience.</p>
           </div>
         </div>
       </section>
       <footer>
         <div class="container">
-          <a class="up-next" href="visuals"><strong>Up next:</strong> Visuals <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          <a class="up-next" href="design-system"><strong>Up next:</strong> Eventbrite Design System <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
       </footer>
     </div>
