@@ -45,7 +45,7 @@ exports.sassmin = function sassmin() {
 
 exports.htmlmin = function htmlmin() {
   return src('./*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    // .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(dest('./out'));
 };
 
