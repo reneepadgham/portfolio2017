@@ -7,6 +7,6 @@ The future is now.
 
 1. `npm install`
 
-2. `gulp`
+2. `npm start`
 
 3. :tada::tada::tada::tada::tada::tada:
