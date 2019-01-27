@@ -1,4 +1,4 @@
-var {src, dest, parallel} = require('gulp');
+var {src, dest, parallel, watch} = require('gulp');
 var gulpSass = require('gulp-sass');
 var connect = require('gulp-connect');
 var autoprefixer = require('gulp-autoprefixer');
@@ -26,8 +26,13 @@ exports.html = function html() {
     .pipe(connect.reload());
 };
 
+exports.gulpWatch = function gulpWatch() {
+  watch('./*.html', exports.html);
+  watch('./styles/*.scss', exports.sass);
+};
+
 // Development
-exports.default = parallel([exports.serve, exports.sass, exports.html]);
+exports.default = parallel([exports.serve, exports.gulpWatch]);
 
 // Production builds
 exports.sassmin = function sassmin() {
